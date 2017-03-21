@@ -6,9 +6,9 @@
 var app = angular.module("myShoppingList", []); 
 app.controller("myCtrl", function($scope) {
     $scope.products = ["butter", "egg", "cheese"];
-   /* $scope.addItem=function(){
+    $scope.addItem=function(){
         $scope.products.push($scope.addMe);
-    }*/
+    }
 });
 </script>
 <div ng-app="myShoppingList" ng-controller="myCtrl">
@@ -16,7 +16,7 @@ app.controller("myCtrl", function($scope) {
         <li ng-repeat="p in products">{{p}}</li>
     </ul>
 </div>
-<!--<input type="text" ng-model="addMe"/>
-<button ng-click="addItem()">Add</button></button>-->
+<input type="text" ng-model="addMe"/>
+<button ng-click="addItem()">Add</button></button>
 </body>
 </html>
